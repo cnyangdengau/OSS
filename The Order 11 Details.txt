@@ -1,0 +1,6 @@
+OrderNo:11
+CustomerName:john
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+OrderNo:11
+CustomerName:john
+ITEM: Item #0;QTY: 2.0;PRICE:200.0

@@ -1,0 +1,10 @@
+The OrderID is 16
+The CustomerID is john
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-20 14:45:55
+Your Card Number is: 123

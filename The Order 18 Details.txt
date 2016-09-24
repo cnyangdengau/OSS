@@ -1,0 +1,10 @@
+The OrderID is 18
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 1.0;PRICE:100.0
+ITEM: Item #1;QTY: 1.0;PRICE:100.0
+
+ The Total Price is: 200.0
+
+Your Order Date is: 2016-09-24 20:27:15
+Your Card Number is: dadasd

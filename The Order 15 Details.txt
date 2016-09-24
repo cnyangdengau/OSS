@@ -1,0 +1,8 @@
+The OrderID is 15
+The CustomerID is john
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
