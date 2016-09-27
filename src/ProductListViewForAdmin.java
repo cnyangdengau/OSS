@@ -24,7 +24,17 @@ public class ProductListViewForAdmin extends View {
 		flowLayout.setAlignment(FlowLayout.RIGHT);
 		add(panel, BorderLayout.NORTH);
 		
+		JButton ReportButton = new JButton("Report");
+		panel.add(ReportButton);
+		
+		ReportButton.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				AddItemForAdmin.display(getController());
+			}
+		});
+		
 		JButton AddItemButton = new JButton("AddItem");
+		
 		panel.add(AddItemButton);
 		
 		AddItemButton.addActionListener(new ActionListener(){

@@ -1,2 +1,0 @@
-OrderNo:10  /nCustomerName:john  /nITEM: Item #1;QTY: 2.0;PRICE:200.0
-OrderNo:10  /nCustomerName:john  /nITEM: Item #2;QTY: 2.0;PRICE:200.0

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * <pre>
@@ -44,7 +43,7 @@ public class Cart {
 	 * </pre>
 	 * @return The list of CartItems
 	 */
-	public List<CartItem> getList(){
+	public ArrayList<CartItem> getList(){
 		return items;
 	}
 	

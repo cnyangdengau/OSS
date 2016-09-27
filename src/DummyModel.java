@@ -19,7 +19,7 @@ public class DummyModel implements Model {
 		details.put("Admin", new Customer("Fred","1221","dadasd","dsdsada"));
 		
 
-		for(int i = 0; i < 3; i++){
+		for(int i = 0; i < 6; i++){
 			Product birb = new Product("Item #"+i);
 			birb.setProperty("price", "Price ($)", 100f);
 			birb.setImage("https://files.pccasegear.com/images/BX80662I56400-thumb.jpg");

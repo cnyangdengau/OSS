@@ -1,0 +1,371 @@
+The OrderID is 20
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-26 15:05:25
+Your Card Number is: dadasd
+The OrderID is 21
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+ITEM: Item #3;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-26 15:21:39
+Your Card Number is: dadasdThe OrderID is 22
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-26 15:21:50
+Your Card Number is: dadasdThe OrderID is 25
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 4.0;PRICE:400.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 19:02:49
+Your Card Number is: dadasdThe OrderID is 25
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 4.0;PRICE:400.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 19:03:37
+Your Card Number is: dadasdThe OrderID is 26
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 3.0;PRICE:300.0
+
+ The Total Price is: 300.0
+
+Your Order Date is: 2016-09-26 19:05:18
+Your Card Number is: dadasdThe OrderID is 27
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 7.0;PRICE:700.0
+
+ The Total Price is: 700.0
+
+Your Order Date is: 2016-09-26 19:26:18
+Your Card Number is: dadasdThe OrderID is 28
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 6.0;PRICE:600.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-26 19:27:19
+Your Card Number is: dadasdThe OrderID is 28
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 4.0;PRICE:400.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 19:28:01
+Your Card Number is: dadasdThe OrderID is 29
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 6.0;PRICE:600.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-26 19:36:05
+Your Card Number is: dadasdThe OrderID is 30
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 3.0;PRICE:300.0
+
+ The Total Price is: 300.0
+
+Your Order Date is: 2016-09-26 19:37:03
+Your Card Number is: dadasdThe OrderID is 31
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 5.0;PRICE:500.0
+
+ The Total Price is: 500.0
+
+Your Order Date is: 2016-09-26 19:39:32
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 4.0;PRICE:400.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 19:53:30
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 4.0;PRICE:400.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 19:53:34
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 4.0;PRICE:400.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 19:55:19
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-26 20:44:15
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 20:45:20
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 21:45:46
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 21:46:53
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 21:46:57
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 21:49:35
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 21:50:46
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:00:58
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:03:21
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:05:02
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:12:01
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:14:48
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #4;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:32:55
+Your Card Number is: dadasdThe OrderID is 32
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:34:36
+Your Card Number is: dadasdThe OrderID is 33
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:41:50
+Your Card Number is: dadasdThe OrderID is 33
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:48:43
+Your Card Number is: dadasdThe OrderID is 33
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:53:19
+Your Card Number is: dadasdThe OrderID is 34
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 22:59:16
+Your Card Number is: dadasdThe OrderID is 35
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-26 23:04:31
+Your Card Number is: dadasdThe OrderID is 36
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 3.0;PRICE:300.0
+
+ The Total Price is: 300.0
+
+Your Order Date is: 2016-09-26 23:27:32
+Your Card Number is: dadasdThe OrderID is 37
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 00:20:13
+Your Card Number is: dadasdThe OrderID is 38
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 00:20:53
+Your Card Number is: dadasdThe OrderID is 39
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 12:48:23
+Your Card Number is: dadasdThe OrderID is 40
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 12:50:17
+Your Card Number is: dadasdThe OrderID is 41
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 13:06:39
+Your Card Number is: dadasdThe OrderID is 42
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 13:17:31
+Your Card Number is: dadasdThe OrderID is 43
+The CustomerID is Fred
+Order Items listed: 
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+ITEM: Item #3;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-27 13:18:32
+Your Card Number is: dadasd
