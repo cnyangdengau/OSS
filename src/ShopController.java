@@ -6,10 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
+import com.google.gson.Gson;
 
 public class ShopController {
 
@@ -75,6 +78,90 @@ public class ShopController {
 	String pathname = "OrderNumber.txt"; // Set the path of file. 
     File filename = new File(pathname); // Read the file  
  
+    
+    String JsonPathName = "The Order Details.json";
+    File JsonFile = new File(JsonPathName);
+    
+	public ArrayList<String> GetProductReport(String ProductName) {
+		ArrayList<Order> OrderList = new ArrayList<Order>();
+    	InputStreamReader reader = null;
+    	ArrayList<String> CustomerArray = new ArrayList<String>();
+		
+    	try {
+    		//set a input stream object
+    		reader = new InputStreamReader(new FileInputStream(JsonFile));
+    	} catch (FileNotFoundException e) {
+    		e.printStackTrace();
+    	} 
+    	BufferedReader br = new BufferedReader(reader); 
+    	try {
+    		//Transfer the object to integer
+    		Gson gson = new Gson();
+			//OrderNumber = Integer.parseInt(br.readLine());
+			String jsonInString;
+			while( (jsonInString = br.readLine() ) != null) {
+				//System.out.println(jsonInString);
+				Order order = gson.fromJson(jsonInString, Order.class);
+				OrderList.add(order);
+			}
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+    	
+//    	System.out.print(OrderList.size());
+    	for(Order order : OrderList)
+    	{
+    		if(order.getItems().containsKey(ProductName))
+    		{ 
+    			CustomerArray.add(order.CustomerName);
+    		}
+    	}
+		return CustomerArray;
+	}
+	
+    public ArrayList<HashMap<String,Float>> GetCustomerReport(String CustomerName){
+    	
+    	ArrayList<Order> OrderList = new ArrayList<Order>();
+    	InputStreamReader reader = null;
+    	ArrayList<HashMap<String,Float>> HashArray = new ArrayList<HashMap<String,Float>>();
+    	//Order order;
+    	
+    	try {
+    		//set a input stream object
+    		reader = new InputStreamReader(new FileInputStream(JsonFile));
+    	} catch (FileNotFoundException e) {
+    		e.printStackTrace();
+    	} 
+    	BufferedReader br = new BufferedReader(reader); 
+    	try {
+    		//Transfer the object to integer
+    		Gson gson = new Gson();
+			//OrderNumber = Integer.parseInt(br.readLine());
+			String jsonInString;
+			while( (jsonInString = br.readLine() ) != null) {
+				//System.out.println(jsonInString);
+				Order order = gson.fromJson(jsonInString, Order.class);
+				OrderList.add(order);
+			}
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+    	
+//    	System.out.print(OrderList.size());
+    	for(Order order : OrderList)
+    	{
+    		if(order.CustomerName.equals(CustomerName))
+    		{ 
+    			HashArray.add(order.getItems());
+    		}
+    	}
+		return HashArray;
+    }
+    
     public int getOrderNumber()
     {
     	InputStreamReader reader = null;
@@ -371,4 +458,6 @@ public class ShopController {
 			showPopup("Login failed! Please ensure that your user ID and password are correct.");
 		}
 	}
+
+
 }

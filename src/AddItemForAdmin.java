@@ -58,6 +58,7 @@ public class AddItemForAdmin extends JDialog {
 		gbl_contentPanel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		contentPanel.setLayout(gbl_contentPanel);
 		{
+
 			JLabel lblFullName = new JLabel("Set the Product Name:");
 			lblFullName.setHorizontalAlignment(SwingConstants.LEFT);
 			GridBagConstraints gbc_lblFullName = new GridBagConstraints();

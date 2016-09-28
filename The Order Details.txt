@@ -368,4 +368,51 @@ ITEM: Item #3;QTY: 2.0;PRICE:200.0
  The Total Price is: 400.0
 
 Your Order Date is: 2016-09-27 13:18:32
+Your Card Number is: dadasdThe OrderID is 44
+The CustomerID is Yang
+Order Items listed: 
+ITEM: Item #2;QTY: 2.0;PRICE:200.0
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-28 14:38:12
+Your Card Number is: dadasdThe OrderID is 45
+The CustomerID is Deng
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-28 14:44:22
+Your Card Number is: dadasdThe OrderID is 46
+The CustomerID is Li
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #3;QTY: 2.0;PRICE:200.0
+ITEM: Item #4;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-28 14:45:41
+Your Card Number is: dadasdThe OrderID is 47
+The CustomerID is Liu
+Order Items listed: 
+ITEM: Item #1;QTY: 2.0;PRICE:200.0
+ITEM: Item #4;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 400.0
+
+Your Order Date is: 2016-09-28 14:46:31
+Your Card Number is: dadasdThe OrderID is 48
+The CustomerID is Pan
+Order Items listed: 
+ITEM: Item #0;QTY: 2.0;PRICE:200.0
+ITEM: Item #3;QTY: 2.0;PRICE:200.0
+ITEM: Item #4;QTY: 2.0;PRICE:200.0
+
+ The Total Price is: 600.0
+
+Your Order Date is: 2016-09-28 14:47:26
 Your Card Number is: dadasd

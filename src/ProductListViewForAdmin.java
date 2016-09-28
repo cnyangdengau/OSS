@@ -29,7 +29,7 @@ public class ProductListViewForAdmin extends View {
 		
 		ReportButton.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				AddItemForAdmin.display(getController());
+				GetReportForAdmin.display(getController());
 			}
 		});
 		

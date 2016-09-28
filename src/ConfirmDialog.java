@@ -98,7 +98,7 @@ public class ConfirmDialog extends JDialog {
 			order.setItems(item.product.getName(), item.quantity);
 		}
 		Gson gson = new Gson();
-		String json = gson.toJson(order);
+		String json = gson.toJson(order)+"\n";
 		System.out.println(json);
 		writerJson.write(json);  
 		writerJson.flush();  
