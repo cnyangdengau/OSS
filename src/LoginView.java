@@ -106,15 +106,7 @@ public class LoginView extends View {
 		panel_2.add(loginButton);
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				if(username.getText()=="admink")
-//				{
-//					getController().attemptAdminLogin(username.getText(), new String(password.getPassword()));
-//				}
-//				else
-//				{
-//					getController().attemptLogin(username.getText(), new String(password.getPassword()));
-//				}
-				//getController().setView(new SignupView());
+				
 			}
 		});
 		panel_4.setMaximumSize( new Dimension(300, 200) );
@@ -124,7 +116,7 @@ public class LoginView extends View {
 		
 		loginButton.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
-				if(username.getText().equals("admink"))
+				if(username.getText().equals("Admin"))
 				{
 					getController().attemptAdminLogin(username.getText(), new String(password.getPassword()));
 				}

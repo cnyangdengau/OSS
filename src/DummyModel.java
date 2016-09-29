@@ -12,11 +12,11 @@ public class DummyModel implements Model {
 	
 	public DummyModel(){
 		
-		passwords.put("admink", "admink");
+		passwords.put("Admin", "Admin");
 		//AdminDetails.put("admink", new Admin("john", "9547"));
 		
-		passwords.put("Admin", "Admin");
-		details.put("Admin", new Customer("Fred","1221","dadasd","dsdsada"));
+		passwords.put("Customer", "Customer");
+		details.put("Customer", new Customer("Fred","1221","dadasd","dsdsada"));
 		
 
 		for(int i = 0; i < 6; i++){

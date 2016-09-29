@@ -7,26 +7,22 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
+import java.util.Iterator;
+
 import javax.swing.JButton;
 import javax.swing.JDialog;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 public class GetReportForAdmin extends JDialog {
 
 	private static final long serialVersionUID = 1L;
-	
 	private final JPanel contentPanel = new JPanel();
 	private JTextField CustomerName;
 	private JTextField ProductName;
 	
-//	private JTextField homeAddr;
-//	private JTextField cardNum;
-//	String CustomerNameInTextField = null;
 
 	public static void display(ShopController c){
 		GetReportForAdmin dialog = new GetReportForAdmin(c);
@@ -35,21 +31,9 @@ public class GetReportForAdmin extends JDialog {
 		dialog.setVisible(true);
 	}
 	
-//	public Customer toCustomer(){
-//		return new Customer(fullName.getText(), homeAddr.getText(), cardNum.getText(), phoneNumber.getText());
-//	}
-	
-//	public Product toProduct(){
-//		Product birb = new Product(fullName.getText());
-//		birb.setProperty("price", "Price ($)",Float.valueOf(phoneNumber.getText()));
-//		birb.setImage(homeAddr.getText());
-//		return birb;
-//	}
 	
 	public GetReportForAdmin(ShopController c) {
-		
-		JLabel lblDisplay = new JLabel();
-		
+				
 		setTitle("Report");
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
@@ -67,7 +51,7 @@ public class GetReportForAdmin extends JDialog {
 			gbc_fullName.insets = new Insets(0, 0, 5, 5);
 			gbc_fullName.fill = GridBagConstraints.HORIZONTAL;
 			gbc_fullName.gridx = 1;
-			gbc_fullName.gridy = 1;
+			gbc_fullName.gridy = 2;
 			contentPanel.add(CustomerName, gbc_fullName);
 			CustomerName.setColumns(10);
 		}
@@ -75,27 +59,28 @@ public class GetReportForAdmin extends JDialog {
 			GridBagConstraints gbc_lblFullName = new GridBagConstraints();
 			gbc_lblFullName.insets = new Insets(0, 0, 5, 5);
 			gbc_lblFullName.gridx = 2;
-			gbc_lblFullName.gridy = 1;
+			gbc_lblFullName.gridy = 2;
 			JButton CheckCustomerButton = new JButton("Check the Customer Name");
-			//okButton.setActionCommand("OK");
 			CheckCustomerButton.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
-					//System.out.println(CustomerName.getText());
-					//ArrayList<HashMap<String,Float>> HashMap = c.GetCustomerOrders(CustomerName.getText());
-					//CustomerNameInTextField = CustomerName.getText();
 					if(CustomerName.getText().equals("")){
 						Component frame = null;
 						JOptionPane.showMessageDialog(frame, "Please input a Customer Name"); 
 					}
 					else{
+						String Message = "The Customer: " + CustomerName.getText() + "   buy these things: " + "\n\n";
+						Message += "He has " + c.GetCustomerReport(CustomerName.getText()).size() + "  orders. \n\n";
 						for(HashMap<String,Float> hashmap : c.GetCustomerReport(CustomerName.getText()))
 						{
-							//System.out.print(hashmap.toString());
-							Component frame = null;
-							//String Message = 
-							JOptionPane.showMessageDialog(frame, hashmap.toString());
-							//lblDisplay.setText(hashmap.toString());
+							Iterator<String> iter;
+							for (iter = hashmap.keySet().iterator(); iter.hasNext();) {
+								  String str = iter.next();
+								  Message += "Product: " + str + "   " + "Quantity:" + hashmap.get(str) + "\n";
+							}
+							Message += "\n\n";
 						}
+						Component frame = null;
+						JOptionPane.showMessageDialog(frame, Message);
 					}
 				}
 			});
@@ -109,7 +94,7 @@ public class GetReportForAdmin extends JDialog {
 			gbc_fullName.insets = new Insets(0, 0, 5, 5);
 			gbc_fullName.fill = GridBagConstraints.HORIZONTAL;
 			gbc_fullName.gridx = 1;
-			gbc_fullName.gridy = 2;
+			gbc_fullName.gridy = 3;
 			contentPanel.add(ProductName, gbc_fullName);
 			ProductName.setColumns(10);
 		}
@@ -117,9 +102,8 @@ public class GetReportForAdmin extends JDialog {
 			GridBagConstraints gbc_lblFullName = new GridBagConstraints();
 			gbc_lblFullName.insets = new Insets(0, 0, 5, 5);
 			gbc_lblFullName.gridx = 2;
-			gbc_lblFullName.gridy = 2;
+			gbc_lblFullName.gridy = 3;
 			JButton CheckProductButton = new JButton("Check the Product Name");
-			///okButton.setActionCommand("OK");
 			CheckProductButton.addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
 					if(ProductName.getText().equals("")){
@@ -127,88 +111,23 @@ public class GetReportForAdmin extends JDialog {
 						JOptionPane.showMessageDialog(frame, "Please input a Product Name"); 
 					}
 					else{
-//						for(String CustomerName : c.GetProductReport(ProductName.getText()))
-//						{
-//							System.out.println(CustomerName);
-//						}
+						String Message = "The name of customer who buy the product: " + ProductName.getText() + "\n\n";
+						for(String CustomerName : c.GetProductReport(ProductName.getText()))
+						{
+							Message += CustomerName + "\n";
+						}
 						Component frame = null;
-						JOptionPane.showMessageDialog(frame, c.GetProductReport(ProductName.getText()).toString());
+						JOptionPane.showMessageDialog(frame, Message);
 					}
 					}
 			});
 			contentPanel.add(CheckProductButton, gbc_lblFullName);
 		}
-
-		{  
-			lblDisplay.setText("");
-			lblDisplay.setHorizontalAlignment(SwingConstants.LEFT);
-			GridBagConstraints gbc_lblHomeAddress = new GridBagConstraints();
-			gbc_lblHomeAddress.anchor = GridBagConstraints.EAST;
-			gbc_lblHomeAddress.insets = new Insets(0, 0, 0, 0);
-			//gbc_lblHomeAddress.gridx = 1;
-			//gbc_lblHomeAddress.gridy = 5;
-			//gbc_lblHomeAddress.gridwidth = 3;
-			//gbc_lblHomeAddress.gridheight = 3;
-			
-			contentPanel.add(lblDisplay,gbc_lblHomeAddress);
-		}
-//		{
-//			homeAddr = new JTextField();
-//			GridBagConstraints gbc_homeAddr = new GridBagConstraints();
-//			gbc_homeAddr.insets = new Insets(0, 0, 5, 5);
-//			gbc_homeAddr.fill = GridBagConstraints.HORIZONTAL;
-//			gbc_homeAddr.gridx = 2;
-//			gbc_homeAddr.gridy = 3;
-//			contentPanel.add(homeAddr, gbc_homeAddr);
-//			homeAddr.setColumns(10);
-//			//homeAddr.setText(user.address);
-//		}
-//		{
-//			JLabel lblCardNumber = new JLabel("Card number:");
-//			GridBagConstraints gbc_lblCardNumber = new GridBagConstraints();
-//			gbc_lblCardNumber.anchor = GridBagConstraints.EAST;
-//			gbc_lblCardNumber.insets = new Insets(0, 0, 0, 5);
-//			gbc_lblCardNumber.gridx = 1;
-//			gbc_lblCardNumber.gridy = 4;
-//			contentPanel.add(lblCardNumber, gbc_lblCardNumber);
-//		}
-//		{
-//			cardNum = new JTextField();
-//			GridBagConstraints gbc_cardNum = new GridBagConstraints();
-//			gbc_cardNum.insets = new Insets(0, 0, 0, 5);
-//			gbc_cardNum.fill = GridBagConstraints.HORIZONTAL;
-//			gbc_cardNum.gridx = 2;
-//			gbc_cardNum.gridy = 4;
-//			contentPanel.add(cardNum, gbc_cardNum);
-//			cardNum.setColumns(10);
-//			//cardNum.setText(user.cardNumber);
-//		}
 		
-//		{
-//			JPanel DisplayPane = new JPanel();
-//			//DisplayPane.setLayout(new FlowLayout(FlowLayout.LEFT));
-//			getContentPane().add(DisplayPane);
-//			lblDisplay.setText("Hello");
-//			DisplayPane.add(lblDisplay);
-//		}
 		{
-		
 			JPanel buttonPane = new JPanel();
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
-//			{
-//				JDialog me = this;
-//				JButton okButton = new JButton("OK");
-//				okButton.setActionCommand("OK");
-//				okButton.addActionListener(new ActionListener(){
-//					public void actionPerformed(ActionEvent e) {
-//						c.setView(new ProductListViewForAdmin());
-//						me.dispose();
-//					}
-//				});
-//				buttonPane.add(okButton);
-//				getRootPane().setDefaultButton(okButton);
-//			}
 			{
 				JDialog me = this;
 				JButton cancelButton = new JButton("Cancel");
