@@ -118,6 +118,9 @@ public class ShopController {
     			CustomerArray.add(order.CustomerName);
     		}
     	}
+    	
+    	
+    	 
 		return CustomerArray;
 	}
 	

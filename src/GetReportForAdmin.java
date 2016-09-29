@@ -9,9 +9,11 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 public class GetReportForAdmin extends JDialog {
@@ -21,6 +23,7 @@ public class GetReportForAdmin extends JDialog {
 	private final JPanel contentPanel = new JPanel();
 	private JTextField CustomerName;
 	private JTextField ProductName;
+	
 //	private JTextField homeAddr;
 //	private JTextField cardNum;
 //	String CustomerNameInTextField = null;
@@ -44,6 +47,8 @@ public class GetReportForAdmin extends JDialog {
 //	}
 	
 	public GetReportForAdmin(ShopController c) {
+		
+		JLabel lblDisplay = new JLabel();
 		
 		setTitle("Report");
 		setBounds(100, 100, 450, 300);
@@ -85,7 +90,11 @@ public class GetReportForAdmin extends JDialog {
 					else{
 						for(HashMap<String,Float> hashmap : c.GetCustomerReport(CustomerName.getText()))
 						{
-							System.out.print(hashmap.toString());
+							//System.out.print(hashmap.toString());
+							Component frame = null;
+							//String Message = 
+							JOptionPane.showMessageDialog(frame, hashmap.toString());
+							//lblDisplay.setText(hashmap.toString());
 						}
 					}
 				}
@@ -118,26 +127,31 @@ public class GetReportForAdmin extends JDialog {
 						JOptionPane.showMessageDialog(frame, "Please input a Product Name"); 
 					}
 					else{
-						for(String CustomerName : c.GetProductReport(ProductName.getText()))
-						{
-							System.out.println(CustomerName);
-						}
+//						for(String CustomerName : c.GetProductReport(ProductName.getText()))
+//						{
+//							System.out.println(CustomerName);
+//						}
+						Component frame = null;
+						JOptionPane.showMessageDialog(frame, c.GetProductReport(ProductName.getText()).toString());
 					}
 					}
 			});
 			contentPanel.add(CheckProductButton, gbc_lblFullName);
 		}
 
-//		{
-//			JLabel lblHomeAddress = new JLabel("Set the Image URL");
-//			lblHomeAddress.setHorizontalAlignment(SwingConstants.LEFT);
-//			GridBagConstraints gbc_lblHomeAddress = new GridBagConstraints();
-//			gbc_lblHomeAddress.anchor = GridBagConstraints.EAST;
-//			gbc_lblHomeAddress.insets = new Insets(0, 0, 5, 5);
-//			gbc_lblHomeAddress.gridx = 1;
-//			gbc_lblHomeAddress.gridy = 3;
-//			contentPanel.add(lblHomeAddress, gbc_lblHomeAddress);
-//		}
+		{  
+			lblDisplay.setText("");
+			lblDisplay.setHorizontalAlignment(SwingConstants.LEFT);
+			GridBagConstraints gbc_lblHomeAddress = new GridBagConstraints();
+			gbc_lblHomeAddress.anchor = GridBagConstraints.EAST;
+			gbc_lblHomeAddress.insets = new Insets(0, 0, 0, 0);
+			//gbc_lblHomeAddress.gridx = 1;
+			//gbc_lblHomeAddress.gridy = 5;
+			//gbc_lblHomeAddress.gridwidth = 3;
+			//gbc_lblHomeAddress.gridheight = 3;
+			
+			contentPanel.add(lblDisplay,gbc_lblHomeAddress);
+		}
 //		{
 //			homeAddr = new JTextField();
 //			GridBagConstraints gbc_homeAddr = new GridBagConstraints();
@@ -169,7 +183,16 @@ public class GetReportForAdmin extends JDialog {
 //			cardNum.setColumns(10);
 //			//cardNum.setText(user.cardNumber);
 //		}
+		
+//		{
+//			JPanel DisplayPane = new JPanel();
+//			//DisplayPane.setLayout(new FlowLayout(FlowLayout.LEFT));
+//			getContentPane().add(DisplayPane);
+//			lblDisplay.setText("Hello");
+//			DisplayPane.add(lblDisplay);
+//		}
 		{
+		
 			JPanel buttonPane = new JPanel();
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
